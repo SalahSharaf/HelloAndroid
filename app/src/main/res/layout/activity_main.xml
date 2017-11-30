@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.salah.helloandroid.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/udacity3"
+        android:scaleType="fitXY" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/ic_location_on_white_24dp"
+        android:id="@+id/adress"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St\nMountain View, CA 94043"
+        android:textColor="#29b6f6"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:id="@+id/adressText"
+        android:layout_below="@id/adress"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:src="@drawable/ic_phone_white_24dp"
+        android:layout_below="@id/adressText"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:textColor="#29b6f6"
+        android:text="650-555-5555"
+        android:id="@+id/phoneText"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:src="@drawable/ic_language_white_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.udacity.com"
+        android:textColor="#29b6f6"
+        android:textSize="20dp"
+        android:layout_below="@id/phoneText"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
